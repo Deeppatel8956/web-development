@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* //Element selector */
+        div{
+            background-color: cadetblue;
+        }
+        /* class selector */
+        .bg{
+            background-color: rgb(40, 40, 214);
+        }
+        /* Id selector */
+        #green{
+            background-color: chocolate;
+        }
+        /* child selector */
+        div >p {
+            background-color: brown;
+        }
+        div p{
+            background-color: aqua;
+        }
+        /* desendent selector */
+        /* Pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+    <div class="bg">
+        Lorem ipsum dolor sit.
+        <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet.
+        <article>
+            <p>Lorem ipsum dolor sit amet 10.</p>
+        </article>
+    </div>
+    <div id="green">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+
+    <a href="http://www.google.com">Google</a>
+</body>
+</html>
