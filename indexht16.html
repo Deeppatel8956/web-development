@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root{
+            --color:rgb(240, 19, 181);
+            --secondcolor:rgba(0, 0, 255, 0.762);
+            --hoppad:23px;
+            --jokma:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            background-color:var(--color);
+        }
+        ul li{
+            list-style: none;
+            margin: 34px;
+        }
+        ul li:first-child{
+            --color:rgb(19, 240, 122);
+            color: var(--color);
+        }
+        .bop{
+            background-color: var(--secondcolor);
+        }    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+         <li>Home</li>
+         <li>About</li>
+         <li>Setting</li>
+    </ul>
+    <p class="bop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum soluta nesciunt asperiores accusantium dolores? Perspiciatis quos id, rerum molestias aperiam veniam itaque fugit repellendus minus, voluptatem mollitia repellat at rem velit nulla aspernatur illum praesentium? Neque beatae, dicta cumque atque excepturi architecto nobis nihil dolore?</p>
+</div>
+</body>
+</html>
