@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            /* float: left; */
+            float: right;
+        }
+        .card{
+            border: 2px solid rgba(255, 0, 0, 0.811);
+        }
+        .card:nth-child(3){
+            background-color: royalblue;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://thumbs.dreamstime.com/b/mountains-love-amaizing-good-place-colombia-pereira-risaralda-sky-cloudmagic-mountains-love-amaizing-158519409.jpg" alt="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quam modi. Ipsa dolorum explicabo animi officiis voluptate deserunt nostrum exercitationem, corporis autem odit quasi tenetur velit, magni hic recusandae vel molestias amet maiores rem?</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellat voluptate tempore soluta laboriosam possimus quibusdam, excepturi deserunt velit similique inventore cupiditate, nulla pariatur atque totam deleniti explicabo vero tenetur? Voluptatibus necessitatibus laboriosam, esse mollitia molestias eius! Consequatur, adipisci. Repellendus odio accusamus repellat vitae quis neque itaque architecto enim similique maiores sapiente temporibus nisi debitis illum deleniti doloribus omnis sit esse, laudantium autem facere tempore? Vitae saepe totam modi dicta omnis hic doloremque nam aperiam expedita deserunt adipisci, natus magnam quisquam recusandae porro dolor perferendis repudiandae tenetur veritatis quo facilis animi error ut. Omnis dolores saepe tenetur ex mollitia repudiandae.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>
