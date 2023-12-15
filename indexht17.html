@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /* @media not|only mediatype and (expressions)
+        CSS-Code */
+        @media only screen and (max-width:500px){
+            .helo{
+                text-align: center;
+                background-color: aqua;
+                color: black;
+                font-size: 1.8rem;
+            }
+            body{
+                background-color: rebeccapurple;
+            }
+            .boxes{
+                flex-direction: column;
+            
+            }
+            .box{
+                height: 244px;
+                width: 244px;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 244px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="helo">
+        Hey , i  am  red  guy?
+    </div>
+    <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>
