@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FILTER</title>
+    <style>
+        .image1{
+            height: 488px;
+            width: 466px;
+            object-fit: cover;
+            filter: blur(4px);
+            filter: hue-rotate(41deg);
+            filter: drop-shadow(16px 16px 20px blue);
+            /* filter: opacity(0.9); */
+            /* filter: invert(100%); */
+            /* filter: none; */
+            /* filter: brightness(100); */
+            /* filter: saturate(10); */
+            /* filter: sepia(100%); */
+            /* filter: url(); */
+        }
+        .image2{
+            filter: contrast(800%);
+        }
+        .image3{
+            filter: grayscale(80%);
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <img class="image1" src="https://www.mooc.org/hubfs/applications-of-computer-programming.jpg" alt="">
+        <img class="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRP8gROe3dv2zWqVR_MFiLixk8eR02c1MPg&usqp=CAU" alt="">
+        <img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6MLT2lpj3M85eFPT2oNNivGYx_saZEww8Q&usqp=CAU" alt="">
+    </div>
+</body>
+</html>
