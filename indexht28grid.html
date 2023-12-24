@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "nav navi nave"
+            'side artiv fruite'
+            'one two three'
+            ;
+            grid-row-gap: 10px;
+            margin: 10px 20%;
+        }
+        .item{
+            height: 190px;
+            width: 290px;
+            background-color: rgb(203, 223, 223);
+            border: 4px solid azure;
+            border-radius: 4px;
+        }
+        .item-1{
+            grid-area: nav;
+        }
+        .item-2{
+            grid-area: navi;
+        }
+        .item-3{
+            grid-area: nave;
+        }
+        .item-4{
+            grid-area: side;
+        }
+        .item-5{
+            grid-area: artiv;
+        }
+        .item-6{
+            grid-area: fruite;
+        }
+        .item-7{
+            grid-area: one;
+        }
+        .item-8{
+            grid-area: two;
+        }
+        .item-9{
+            grid-area: three;
+        }
+        .bn{
+            text-align: center;
+            padding: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <div class="bn">
+            <a href="http://google.com">google</a>
+            
+        </div>
+        </div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+        <div class="item item-7"></div>
+        <div class="item item-8"></div>
+        <div class="item item-9"></div>
+        <div class="item "></div>
+    </div>
+</body>
+</html>
