@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <script>
+        function myFun() {
+            var correct_way=/^[A-Za-z]+$/
+            var a=document.getElementById('User_Name').value;
+            if (a=='') {
+                document.getElementById('Message').style.color='red';
+                document.getElementById('Message').innerHTML='Please fill user name'
+                return false;
+            }
+            if (a.length<3) {
+                document.getElementById('Message').style.color='red';
+                document.getElementById('Message').innerHTML='username must be 3 character';
+                return false;
+            }
+            if (a.length>20) {
+                document.getElementById('Message').style.color='red';
+                document.getElementById('Message').innerHTML='username must be less than 20 characater';
+                return false;
+            }
+            if (a.match(correct_way)) {
+                true;
+            }
+                else{
+                document.getElementById('Message').style.color='red';
+                document.getElementById('Message').innerHTML='please write alphabate character';
+                return false;
+            }
+            var b=document.getElementById('Pass_word').value;
+            if (b=='') {
+                document.getElementById('Pass').style.color='red';
+                document.getElementById('Pass').innerHTML='Please fill the field';
+                return false
+            }
+            if (b.length<5) {
+                document.getElementById('Pass').style.color='red';
+                document.getElementById('Pass').innerHTML='Password minmum 5 charcater ';
+                return false
+            }
+            if (b.length>16) {
+                document.getElementById('Pass').style.color='red';
+                document.getElementById('Pass').innerHTML='Password maximum 16 charcater ';
+                return false
+            }
+            var vaild_eamil=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+            var c=document.getElementById('E_mail').value;
+            if (c=='') {
+                document.getElementById('Email').style.color='red';
+                document.getElementById('Email').innerHTML='Please fill the field';
+                return false
+            }
+            if (c.match(vaild_eamil)) {
+                true
+            }else{
+                document.getElementById('Email').style.color='red';
+                document.getElementById('Email').innerHTML='Write again';
+                return false
+            }
+            var d=document.forms.name;
+            for (let index = 0; index < d.length; index++) {
+                
+                if (d[index].checked==true) {
+                    return true
+                }
+                document.getElementById('radio').style.color='red';
+                document.getElementById('radio').innerHTML='Please check anyone';
+                return false
+            }
+        }
+    </script>
+
+    <form action="" onsubmit="return myFun()" name="forms">
+        <label for="">Username :</label>
+        <br>
+        <input type="text" name="" id="User_Name" value="">
+        <span id="Message"></span>
+        <br><br>
+        <label for="">Password :</label>
+        <br>
+        <input type="password" name="" id="Pass_word" value="">
+        <span id="Pass"></span>
+        <br><br>
+        <label for="">Email :</label>
+        <br>
+        <input type="text" name="" id="E_mail" value="">
+        <span id="Email"></span>
+        <br><br>
+        <label for="">Gender:</label>
+        <br>
+        <input type="radio" name="name" id="" value="Male">Male
+        <input type="radio" name="name" id="" value="Female">Female
+        <input type="radio" name="name" id="" value="Other">Other
+        <div><p id="radio"></p></div>
+        
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
