@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // In JavaScript, a Set is a collection of unique values. It is similar to an array, but the values in a Set are not ordered and cannot be repeated.
+
+
+
+// Here is an example of how to create and use a Set in JavaScript:
+
+
+
+// Create a new Set
+
+// const mySets = new Set();
+
+
+
+// // Add some values to the Set using add method
+
+// mySet.add(1);
+
+// mySet.add(2);
+
+// mySet.add("thapa");
+
+// mySet.add(4);
+
+// mySet.add("vinod");
+
+
+
+// In JavaScript, a Set is a collection of unique values. It is similar to an array, but the values in a Set are not ordered and cannot be repeated.
+
+
+
+// Here is an example of how to create and use a Set in JavaScript:
+
+
+
+// Create a new Set
+
+const mySet = new Set();
+
+
+
+// Add some values to the Set using add method
+
+mySet.add(1);
+
+mySet.add(2);
+
+mySet.add("thapa");
+
+mySet.add(4);
+
+mySet.add("Mak");
+
+
+
+// Check the size of the Set using size property
+
+// console.log(mySet.size);
+
+
+
+// Check if a value exists in the Set using has method
+
+// console.log(mySet.has(6));
+
+
+
+// Remove a value from the Set using delete method
+
+// console.log(mySet.delete("thapa"));
+// console.log(mySet.size)
+
+
+
+// Iterate over the values in the Set
+
+for (let setValue of mySet) {
+
+  console.log(setValue);
+
+}
+
+
+
+// You can also create a Set from an array by using the Set constructor:
+
+
+
+const array = [1, 2, 3, 3, 4, 4, 5, 6, 6];
+
+const mySetArr = new Set(array);
+
+for (let values of mySetArr) {
+
+  console.log(values);
+
+}
+
+// console.log(mySetArr.size);
+
+
+
+// Note that the Set only keeps track of unique values, so if you pass an array with duplicate values to the Set constructor, it will only keep one copy of each value.
+
+
+
+
+// use case
+
+// to delete the duplicate from an array
+
+const ourBatchNumbers = [1, 2, 3, 4, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7];
+
+const myUniqueBatchNumber = [...new Set(ourBatchNumbers)];
+
+console.log( myUniqueBatchNumber);
+
+
+
+// const myName = "vinod";
+
+// console.log(new Set(myName));
+</script>
+</html>

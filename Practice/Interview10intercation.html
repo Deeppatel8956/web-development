@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num1=[1,2,2,4];
+    let num2=[2,2];
+
+    const intercation=num1.filter((curele)=>{
+        return num2.includes(curele);
+    })
+    document.write([...new Set(intercation)])
+    
+</script>
+</html>

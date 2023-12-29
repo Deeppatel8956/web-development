@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    // nullesoperator use null and undefind
+    let myValue;
+    let myNo=myValue??10;
+    document.write(myNo)
+
+    // Optional chaining is a feature in JavaScript that allows you to access the properties of an object or elements of an array without having to check whether the object or array is null or undefined first. It is represented by the ?. operator and can be used to concisely access deeply nested properties without having to write a long chain of if statements to check for null or undefined values.
+    const user={
+        name:"Johan",
+        age:30,
+        address:{
+            street:"Main St",
+            city:"New york",
+            state:"Ny",
+            zip:10001
+        }
+    }
+    console.log(user?.address?.city?.phone);//undefind
+    console.log(user?.address?.city);
+
+
+    const lanme=[
+        {name:"jack",age:20},
+        {name:"Don",age:25},
+        {name:"hUlk",age:20}
+    ]
+    console.log(lanme[1]?.name)
+</script>
+</html>

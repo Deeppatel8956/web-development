@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of and for in</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // for-of and for-in are two different looping constructs in JavaScript.
+    // for-of is used to iterate over the values in an iterable object, such as an array or a string.
+    //  It allows you to access the values of the object directly, without having to use an index.
+
+
+    // const myName="Jack";
+    const my_Num=[1,20,3,0,45,30,89]
+    for(let char of my_Num) 
+    {
+        document.write(`<h1>${char}</h1>`)
+    }
+
+
+    // On the other hand, for-in is used to iterate over the enumerable properties of an object. It allows you to access the keys of the object, rather than the values.
+
+
+    const obj={"a":1,"b":200,"c":400,"d":500}
+    for (const key in obj) {
+        // document.write(Object.keys(obj))
+        document.write(`the key ${key}<br>`);
+    }
+    
+    const obj4={
+      a:1,
+      b:2,
+      c:3
+    }
+    for(const keyes of Object.keys(obj4)){
+        document.write(keyes)
+    }
+    // for ...of  for[array,map, Set, String] to iterate over value
+    // for ...in for array to iterate over key
+    // for ...in for objects  to enumerate its (object) properties
+
+</script>
+</html>

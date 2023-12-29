@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marge and Sorted two Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr1=[1,2,3,4,5,5];
+    let arr2=[2,4,4,6,8];
+
+    let arr3=[...arr1, ...arr2]
+    // document.write(arr3);
+    
+    // Ascanding order
+    // document.write(arr3.sort((a,b)=>a-b))
+    // document.write(arr3.sort((a,b)=>b-a))
+
+    // duplicat arr remove
+    document.write(arr3=[...new Set(arr3)])
+
+</script>
+</html>
